@@ -1,0 +1,19 @@
+package main
+
+import "fmt"
+
+func main() {
+	// c, c++, rust .. go, c#
+	// var a int = 1
+	a := 1     /// b copy a ... a = 1
+	var b *int // khai bao pointer
+	b = &a
+
+	a = 6
+	// khi tao ra mot ponter bien a nhu the nao thi bien b cung nhu vay va nguoc lai.
+	*b = 2
+
+	fmt.Println("a: ", a)
+	fmt.Println("b: ", *b)
+	
+}
